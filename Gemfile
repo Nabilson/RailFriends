@@ -7,6 +7,7 @@ gem "rails", "~> 7.0.4"
 gem 'image_processing',           '1.9.3'
 gem 'mini_magick',                '4.9.5'
 gem 'active_storage_validations', '0.8.9'
+
 gem 'bcrypt',                     '3.1.13'
 gem 'faker',                      '2.11.0'
 gem 'will_paginate',              '3.3.0'
@@ -19,6 +20,8 @@ gem "turbo-rails"
 gem 'jbuilder',                   '2.10.0'
 gem "bootsnap", require: false
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem "sprockets-rails"
+
 
 group :development, :test do
   gem "sqlite3", "~> 1.4"
@@ -44,8 +47,9 @@ group :test do
 end
 
 group :production do
-  gem 'pg',         '1.2.3'
+  gem 'pg'
   gem 'aws-sdk-s3', '1.87.0', require: false
+  gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
