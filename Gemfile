@@ -47,7 +47,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 1.5', '>= 1.5.6'
   gem 'aws-sdk-s3', '1.87.0', require: false
   gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 end
