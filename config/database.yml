@@ -12,6 +12,7 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+#asdfasdfasdfasdf
 development:
   adapter: postgresql
   encoding: unicode
