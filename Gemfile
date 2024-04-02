@@ -48,6 +48,7 @@ end
 
 group :production do
   gem 'pg', '~> 1.5', '>= 1.5.6'
+  gem 'rails_12factor'
   gem 'aws-sdk-s3', '1.87.0', require: false
   gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 end
